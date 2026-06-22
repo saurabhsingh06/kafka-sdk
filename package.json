@@ -1,0 +1,23 @@
+{
+  "name": "@saurabh/kafka-sdk",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Saurabh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saurabh/kafka-sdk"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@kafkajs/confluent-schema-registry": "^4.1.0",
+    "kafkajs": "^2.2.4"
+  }
+}
