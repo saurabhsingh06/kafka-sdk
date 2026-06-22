@@ -1,5 +1,6 @@
 import { Kafka, KafkaConfig as KJSConfig } from "kafkajs";
 import { KafkaConfig } from "../config/types";
+import { KafkaProducer } from "../producer/producer";
 
 export class KafkaClient {
   private kafka: Kafka;
@@ -17,4 +18,10 @@ export class KafkaClient {
   getKafkaInstance(): Kafka {
     return this.kafka;
   }
+
+  getProducer(): KafkaProducer {
+    return new KafkaProducer(this.kafka);
+  }
 }
+
+
