@@ -10,7 +10,7 @@ export interface KafkaClientConfig {
   groupId?: string;
 }
 
-export class KafkaJsClient implements KafkaClient {
+export class KafkaClientWrapper implements KafkaClient {
   private kafka: Kafka;
   private producer: Producer;
 

@@ -26,7 +26,20 @@ importers:
 
   packages/kafka-core: {}
 
-  packages/kafka-producer: {}
+  packages/kafka-producer:
+    dependencies:
+      '@saurabh_singh_06/kafka-client':
+        specifier: workspace:*
+        version: link:../kafka-client
+      '@saurabh_singh_06/kafka-core':
+        specifier: workspace:*
+        version: link:../kafka-core
+      '@saurabh_singh_06/schema-registry':
+        specifier: workspace:*
+        version: link:../schema-registry
+      '@saurabh_singh_06/serializer':
+        specifier: workspace:*
+        version: link:../serializer
 
   packages/schema-registry:
     dependencies:
