@@ -1,23 +1,20 @@
 {
-  "name": "@saurabh_singh_06/kafka-sdk",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "author": "Saurabh",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/saurabh/kafka-sdk"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
+  "name": "kafka-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node src/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev"
   },
-  "dependencies": {
-    "@kafkajs/confluent-schema-registry": "^4.1.0",
-    "kafkajs": "^2.2.4"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   }
 }
